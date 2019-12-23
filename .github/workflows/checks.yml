@@ -10,10 +10,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - uses: testomatio/check-tests@master
+    - uses: testomatio/check-tests@stable
       with:
         framework: jest
-        tests: "./test/**.test.js"
+        tests: "./test/**/**.test.js"
         token: ${{ secrets.GITHUB_TOKEN }}
         has-tests-label: true
 

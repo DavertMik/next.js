@@ -12,7 +12,7 @@ jobs:
         fetch-depth: 0
     - uses: testomatio/check-tests@master
       with:
-        framework: codeceptjs
+        framework: jest
         tests: "./test/**.test.js"
         token: ${{ secrets.GITHUB_TOKEN }}
         has-tests-label: true
